@@ -1,0 +1,149 @@
+body {
+    background-image: url(../imagens/fundo-site.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'Comforter Brush', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.cartao {
+    background-color: #2e2d59be;
+    width: 450px;
+    border: 3px solid #f2b138;
+    border-radius: 8px;
+    overflow: hidden;
+
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+
+    box-shadow: rgba(0, 0, 0, 0.521) 0px 14px 28px, rgba(0, 0, 0, 0.521) 0px 10px 10px;
+}
+
+.cartao .minhas-informacoes {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.cartao .minhas-informacoes img {
+    border-radius: 50px;
+    border: 3px solid #DE91A1;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.cartao .minhas-informacoes .nome {
+    font-size: 25px;
+}
+
+.cartao .minhas-informacoes .cargo {
+    font-size: 15px;
+    color: rgb(171, 171, 171);
+}
+
+.cartao .conteudo {
+    margin-top: 15px;
+}
+
+.cartao .abas {
+    display: flex;
+}
+
+.cartao .abas .aba {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out; 
+}
+
+.cartao .abas img {
+    width: 30px;
+}
+
+.abas .aba.selecionada {
+    background-color: #655A8C;
+}
+
+.cartao .informacoes-abas {
+    background-color: #655A8C;
+}
+
+.cartao .abas .aba:hover {
+    background-color: #847CAD;
+}
+
+.informacoes-abas .informacao {
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+}
+
+.informacoes-abas .informacao.selecionada {
+    display: block;
+}
+
+.informacoes-abas .sub-titulo {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.informacoes-abas .descricao {
+    font-size: 15px;
+    line-height: 22px;
+    max-height: 180px;
+    overflow-y: auto;
+    
+}
+
+.informacoes-abas .descricao span {
+    color: #f2b138;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.redes-sociais li a {
+    width: 250px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.redes-sociais li a:hover {
+    opacity: 0.7;
+}
+
+.redes-sociais .curriculo {
+    background-color: #06c185;
+}
+
+.redes-sociais .linkedin {
+    background-color: #1d87ed;
+}
+
+.redes-sociais .github {
+    background-color: #545454;
+}
